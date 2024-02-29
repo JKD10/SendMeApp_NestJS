@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "184c1edb-da8b-4cda-bce0-1214d4b214f7",
+		"name": "Prueba SendMeApp (NestJS)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32807309"
+	},
+	"item": [
+		{
+			"name": "Crear Mensaje",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nick\": \"Miguel\",\r\n    \"mensaje\": \"NestJS tiene arquitectura Angular\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/{{MENSAJES}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Mensajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/{{MENSAJES}}"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Edición Mensaje",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nick\": \"Alejandro\",\r\n    \"mensaje\": \"Hola NestJS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/{{MENSAJES}}/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Mensaje",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/{{MENSAJES}}/2"
+			},
+			"response": []
+		}
+	]
+}
